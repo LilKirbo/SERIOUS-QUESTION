@@ -11,7 +11,7 @@ function selectOption(option) {
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'WHATTTTTT?'; 
+        document.getElementById('no-button').innerText = 'NANIIIII?'; 
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -30,7 +30,7 @@ function flashRainbowColors(callback) {
     var interval = setInterval(function() {
         document.body.style.backgroundColor = colors[i];
         i = (i + 1) % colors.length;
-    }, 500); // Change color every 500 milliseconds
+    }, 200); // Change color every 500 milliseconds
     setTimeout(function() {
         clearInterval(interval);
         document.body.style.backgroundColor = ''; // Reset background color
@@ -79,4 +79,5 @@ function displayCatHeart() {
 // Display the cat.gif initially
 
 displayCat();
+
 
